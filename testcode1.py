@@ -39,5 +39,6 @@ while True:
 	elif data.value == 'ON' and current != 'ON':
 		print("assistant on")
 		switch_on()
+	print(current)
 	time.sleep(1)
 	
