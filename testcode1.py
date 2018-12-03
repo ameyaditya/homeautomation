@@ -7,8 +7,8 @@ ADAFRUIT_IO_KEY = "85049e20366041e0812a3b5786526548"
 current = ''
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(2,GPIO.OUTPUT)
-GPIO.setup(26,GPIO.INPUT, pull_up_down = GPIO.PUD_DOWN)
+GPIO.setup(2,GPIO.OUT)
+GPIO.setup(26,GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 def switch_on():
 	GPIO.output(2, False)
 	current = 'ON'
