@@ -12,11 +12,11 @@ GPIO.setup(26,GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 def switch_on():
 	print("Turning on")
 	GPIO.output(2, False)
-	current = 'ON'
+	global current = 'ON'
 def switch_off():
 	print("turning off")
 	GPIO.output(2, True)
-	current = 'OFF'
+	global current = 'OFF'
 aio = Client(ADAFRUIT_IO_USERNAME, ADAFRUIT_IO_KEY)
 current_26 = GPIO.input(26)
 while True:
