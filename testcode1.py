@@ -4,7 +4,7 @@ import time
 
 ADAFRUIT_IO_USERNAME = "ameyaditya"
 ADAFRUIT_IO_KEY = "85049e20366041e0812a3b5786526548"
-current = ''
+current = 'OFF'
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(2,GPIO.OUT)
