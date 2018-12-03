@@ -23,12 +23,12 @@ while True:
 	if GPIO.input(26) != current_26:
 		if current == 'ON':
 			switch_off()
-			print("Switch off current state = {0}, previous state {1}",.format(GPIO.input(26), current_26))
+			print("Switch off current state = {0}, previous state {1}".format(GPIO.input(26), current_26))
 			aio.send('toggle-switch','OFF')
 			current_26 = GPIO.input(26)
 		else:
 			switch_on()
-			print("Switch off current state = {0}, previous state {1}",.format(GPIO.input(26), current_26))
+			print("Switch off current state = {0}, previous state {1}".format(GPIO.input(26), current_26))
 			print("turning on state:{0}".format(GPIO.input(26)))
 			aio.send('toggle-switch','ON')
 			current_26 = GPIO.input(26)
